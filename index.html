@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url(backgroundimage/mount.png);
+            background-repeat: no-repeat;
+            height: 97vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+
+        .box h1 {
+            text-align: center;
+        }
+
+        input {
+            height: 30px;
+            padding-left: 20px;
+            margin-right: 10px;
+        }
+
+
+        .p2 {
+            color: darkkhaki;
+        }
+
+
+
+        .box {
+            width: 500px;
+            height: 300px;
+            background-color: rgb(68, 40, 92);
+            color: lemonchiffon;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 20px;
+            padding-left: 20px;
+            animation: popup 3s ease 1s forwards,
+                swing 3s ease-in-out 4s forwards;
+            position: relative;
+            transform-origin: top left;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(6px);
+
+
+        }
+
+
+        @keyframes swing {
+            0% {
+                transform: rotateZ(0deg);
+            }
+
+            40% {
+                transform: rotateZ(20deg);
+            }
+
+            70% {
+                transform: rotateZ(-10deg);
+            }
+
+            100% {
+                transform: rotateZ(0deg);
+            }
+
+
+        }
+
+
+
+
+
+
+        @keyframes popup {
+            from {
+                transform: translateY(-300px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(20px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div class="box">
+        <h1>Murad`s Website</h1>
+        <p>Das ist mein Geschlecht</p>
+        <input type="email" placeholder="email" required />
+
+        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloribus perferendis maiores reprehenderit commodi dolor obcaecati sit perspiciatis
+            voluptatem ea vitae, iste provident excepturi aspernatur pariatur cumque.
+            Doloremque nulla commodi quasi?</p>
+
+    </div>
+
+</body>
+
+</html>
